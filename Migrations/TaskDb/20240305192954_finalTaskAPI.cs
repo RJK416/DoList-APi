@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace FinalDoListAPI.Migrations.TaskDb
+namespace FinalToDoAPI.Migrations.TaskDb
 {
     public partial class finalTaskAPI : Migration
     {

@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using FinalDoListAPI.Services.Database;
+using FinalToDoAPI.Services.Database;
 
-namespace FinalDoListAPI.Models;
+namespace FinalToDoAPI.Models;
 
 public static class SeedData
 {
@@ -13,10 +13,10 @@ public static class SeedData
         TaskDbContext TaskContext = app.ApplicationServices
             .CreateScope().ServiceProvider.GetRequiredService<TaskDbContext>();
 
-        if (context.Database.GetPendingMigrations().Any())
-        {
-            context.Database.Migrate();
-        }
+        //if (context.Database.GetPendingMigrations().Any())
+        //{
+        //    context.Database.Migrate();
+        //}
 
         if (!context.Accounts.Any())
         {

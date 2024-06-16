@@ -1,5 +1,5 @@
-using FinalDoListAPI.Models;
-using FinalDoListAPI.Services.Database;
+using FinalToDoAPI.Models;
+using FinalToDoAPI.Services.Database;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +9,7 @@ using System.Security.Cryptography;
 using Microsoft.AspNetCore.Http;
 using System.Text;
 
-namespace DoListAPI.Controllers
+namespace FinalToDoAPI.Controllers
 {
     [Route("api/[controller]")]
     public class MyAccountController : ControllerBase

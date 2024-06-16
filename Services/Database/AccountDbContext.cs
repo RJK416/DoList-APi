@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using FinalDoListAPI.Models;
+using FinalToDoAPI.Models;
 
-namespace FinalDoListAPI.Services.Database
+namespace FinalToDoAPI.Services.Database
 {
     public class AccountDbContext : DbContext
     {

@@ -1,15 +1,17 @@
-using FinalDoListAPI.Models;
-using FinalDoListAPI.Models.Repository;
-using FinalDoListAPI.Services.Database;
+using FinalToDoAPI.Models;
+using FinalToDoAPI.Models.Repository;
+using FinalToDoAPI.Services.Database;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
+
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
@@ -62,7 +64,9 @@ internal class Program
         builder.Services.AddDbContext<TaskDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("TaskConnection")));
 
-        builder.Services.AddScoped<TaskDbContext>();
+        string accountConnectionString = builder.Configuration.GetConnectionString("TaskConnection");
+
+
         builder.Services.AddScoped<ITaskRepository, TaskRepository>();
 
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

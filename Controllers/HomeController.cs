@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using FinalDoListAPI.Models;
+using FinalToDoAPI.Models;
 
-namespace DoListAPI.Controllers;
+namespace FinalToDoAPI.Controllers;
 
 public class HomeController : Controller
 {

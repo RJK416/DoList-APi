@@ -1,6 +1,6 @@
-using FinalDoListAPI.Models;
+using FinalToDoAPI.Models;
 
-namespace FinalDoListAPI.Models.Repository;
+namespace FinalToDoAPI.Models.Repository;
 
 public interface ITaskRepository
 {

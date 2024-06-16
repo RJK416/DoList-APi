@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace FinalDoListAPI.Models;
+namespace FinalToDoAPI.Models;
 
 public class AccountModel
 {

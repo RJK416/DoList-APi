@@ -1,4 +1,4 @@
-namespace FinalDoListAPI.Models;
+namespace FinalToDoAPI.Models;
 
 public class ErrorViewModel
 {

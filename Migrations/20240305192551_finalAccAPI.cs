@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace FinalDoListAPI.Migrations
+namespace FinalToDoAPI.Migrations
 {
     public partial class finalAccAPI : Migration
     {

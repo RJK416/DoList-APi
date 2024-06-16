@@ -1,8 +1,8 @@
 using System.Linq;
-using FinalDoListAPI.Models;
-using FinalDoListAPI.Services.Database;
+using FinalToDoAPI.Models;
+using FinalToDoAPI.Services.Database;
 
-namespace FinalDoListAPI.Models.Repository
+namespace FinalToDoAPI.Models.Repository
 {
     public class TaskRepository : ITaskRepository
     {

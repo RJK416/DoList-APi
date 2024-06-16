@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using FinalDoListAPI.Models;
-using Task = FinalDoListAPI.Models.Task;
+using FinalToDoAPI.Models;
+using Task = FinalToDoAPI.Models.Task;
 
-namespace FinalDoListAPI.Services.Database
+namespace FinalToDoAPI.Services.Database
 {
     public class TaskDbContext : DbContext
     {

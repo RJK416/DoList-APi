@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace FinalDoListAPI.Services.Database
+namespace FinalToDoAPI.Services.Database
 {
     public class ToDoListDbContext : DbContext
     {
